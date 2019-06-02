@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FESA</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/jquery.mycart.js"></script>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mfoxcss.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+
+  <div class="put-include-header"></div>
+
+  <script>
+      $(".put-include-header").load("header.html");
+  </script>
+
+<!-- MDC  -------------------------------------------------------->
+<div class="main">
+
+	<p style="font-size:4vw">MDC Products Catalog</p>
+	<p style="font-size:2vw">Categories</p>
+
+	<div id="mymfcategory">
+	  <button class="mf-btncat active" onclick="filterSelection('all')"> Show all</button>
+    <button class="mf-btncat" onclick="filterSelection('calginates')"> Alginates</button>
+	  <button class="mf-btncat" onclick="filterSelection('cacrylic')"> Acrylics</button>
+	  <button class="mf-btncat" onclick="filterSelection('cmonomers')"> Monomers</button>
+    <button class="mf-btncat" onclick="filterSelection('cplaster')"> Plaster</button>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="mf-row">
+
+    <div class="mf-column calginates">
+  		<div class="mf-content">
+  		<img src="img_mdc/biojel.jpg" style="width:100%">
+  		  <h4 align="center">Bio Jel</h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-biojel">Details</button></p>
+  		  <p align="center">ALGINATE BIOJEL Bag 1 1Lb</p>
+  		</div>
+    </div>
+
+    <!-- The Modal BioJel-->
+    <div class="modal" id="myModal-biojel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">ALGINATE BIOJEL</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Since 3 Uni</th>
+              </tr>
+              <tr>
+                <th>ALGINATE BIOJEL FAST</th>
+                <th>01-B110</th>
+                <th>$ 7.20</th>
+                <th>$ 5.75</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="01-B110" data-name="ALGINATE BIOJEL FAST" data-summary="5.75" data-price="7.20" data-quantity="1" data-image="img_mdc/biojel.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>ALGINATE BIOJEL REG</th>
+                <th>01-B111</th>
+                <th>$ 7.20</th>
+                <th>$ 5.75</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="01-B111" data-name="ALGINATE BIOJEL REG" data-summary="5.75" data-price="7.20" data-quantity="1" data-image="img_mdc/biojel.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+	  <div class="mf-column calginates">
+  		<div class="mf-content">
+  		<img src="img_mdc/maxprintall.jpg" style="width:100%">
+  		  <h4 align="center">All Purpose</h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-maxprint">Details</button></p>
+  		  <p align="center">ALGINATE MAX PRINT ALL PURPOSE TYPE I Bag 1LB</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal All Purpose-->
+    <div class="modal" id="myModal-maxprint">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">ALGINATE MAX PRINT ALL PURPOSE</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Since 3 Uni</th>
+              </tr>
+              <tr>
+                <th>MAX PRINT ALL PURPOSE FAST</th>
+                <th>01-B345</th>
+                <th>$ 12.30</th>
+                <th>$ 9.80</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="01-B345" data-name="MAX PRINT ALL PURPOSE FAST" data-summary="9.80" data-price="12.30" data-quantity="1" data-image="img_mdc/maxprintall.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>MAX PRINT ALL PURPOSE REG</th>
+                <th>01-B332</th>
+                <th>$ 12.30</th>
+                <th>$ 9.80</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="01-B332" data-name="MAX PRINT ALL PURPOSE REG" data-summary="9.80" data-price="12.30" data-quantity="1" data-image="img_mdc/maxprintall.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+	  <div class="mf-column calginates">
+  		<div class="mf-content">
+  		<img src="img_mdc/maxprintchr.jpg" style="width:100%">
+  		  <h4 align="center">Chromatic</h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-chroma">Details</button></p>
+  		  <p align="center">ALGINATE MAX PRINT CHROMATIC TYPE I Bag 1 LB </p>
+  		</div>
+	  </div>
+
+    <!-- The Modal Chroma-->
+    <div class="modal" id="myModal-chroma">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">ALGINATE MAX PRINT CHROMATIC</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Since 3 Uni</th>
+              </tr>
+              <tr>
+                <th>MAX PRINT CHROMATIC FAST</th>
+                <th>01-B310</th>
+                <th>$ 12.30</th>
+                <th>$  9.80</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="01-B310" data-name="MAX PRINT CHROMATIC FAST" data-summary="9.80" data-price="12.30" data-quantity="1" data-image="img_mdc/maxprintchr.jpg">Add to Cart</button></th>
+              </tr>
+
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+	  <div class="mf-column calginates">
+  		<div class="mf-content">
+  		<img src="img_mdc/maxprintcya.jpg" style="width:100%">
+  		  <h4 align="center">Cyan</h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-cyan">Details</button></p>
+  		  <p align="center">ALGINATE MAX PRINT CYAN CHLORHEXIDINE Bag 1LB </p>
+  		</div>
+	  </div>
+
+    <!-- The Modal Cyan-->
+    <div class="modal" id="myModal-cyan">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">ALGINATE MAX PRINT CYAN</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Since 3 Uni</th>
+              </tr>
+              <tr>
+                <th>MAX PRINT CYAN FAST</th>
+                <th>08-D123</th>
+                <th>$ 14.50</th>
+                <th>$ 11.60</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="08-D123" data-name="MAX PRINT CYAN FAST" data-summary="11.60" data-price="14.50" data-quantity="1" data-image="img_mdc/maxprintcya.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>MAX PRINT CYAN REG</th>
+                <th>08-D119</th>
+                <th>$ 14.50</th>
+                <th>$ 11.60</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="08-D119" data-name="MAX PRINT CYAN REG" data-summary="11.60" data-price="14.50" data-quantity="1" data-image="img_mdc/maxprintcya.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+	  <div class="mf-column calginates">
+  		<div class="mf-content">
+  		<img src="img_mdc/maxprintort.jpg" style="width:100%">
+  		  <h4 align="center">Orthodontic</h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-ortho">Details</button></p>
+  		  <p align="center">ALGINATE MAX PRINT ORTHODONTIC W/M Bag 1LB </p>
+  		</div>
+	  </div>
+
+   <!-- The Modal ortho-->
+    <div class="modal" id="myModal-ortho">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">ALGINATE MAX PRINT ORTHODONTIC</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Since 3 Uni</th>
+              </tr>
+              <tr>
+                <th>MAX PRINT ORTHODONTIC FAST</th>
+                <th>01-B321</th>
+                <th>$ 12.30</th>
+                <th>$ 9.80</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="01-B321" data-name="MAX PRINT ORTHODONTIC FAST" data-summary="9.80" data-price="12.30" data-quantity="1" data-image="img_mdc/maxprintort.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+	  <div class="mf-column cacrylic">
+  		<div class="mf-content">
+  		  <img src="img_mdc/acrylic.jpg" style="width:100%">
+  		  <h4>Acrylic</h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-acryl">Details</button></p>
+  		  <p>NIC TONE ACRYLIC Jar 1.1LB</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal ACC-->
+     <div class="modal" id="myModal-acryl">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+
+           <!-- Modal Header -->
+           <div class="modal-header">
+             <h4 class="modal-title">NIC TONE ACRYLIC Jar 1.1 Lb</h4>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+
+           <!-- Modal body -->
+           <div class="modal-body">
+             <table>
+               <tr>
+                 <th>Product</th>
+                 <th>Code</th>
+                 <th>Price</th>
+                 <th>Since 3 Uni</th>
+               </tr>
+               <tr>
+                 <th>ACRYLIC COLDCURE PV2 1.1LB</th>
+                 <th>PV2R1</th>
+                 <th>$ 52.00</th>
+                 <th>$ 41.60</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="PV2R1" data-name="ACRYLIC COLDCURE PV2" data-summary="41.60" data-price="52.00" data-quantity="1" data-image="img_mdc/acrylic.jpg">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>ACRYLIC COLDCURE PV6 1.1LB</th>
+                 <th>PV6R1</th>
+                 <th>$ 52.00</th>
+                 <th>$ 41.60</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="PV6R1" data-name="ACRYLIC COLDCURE PV6" data-summary="41.60" data-price="52.00" data-quantity="1" data-image="img_mdc/acrylic.jpg">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>ACRYLIC HEATCURE PV2 1.1LB</th>
+                 <th>PV2N1</th>
+                 <th>$ 42.16</th>
+                 <th>$ 33.75</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="PV2N1" data-name="ACRYLIC HEATCURE PV2" data-summary="41.60" data-price="52.00" data-quantity="1" data-image="img_mdc/acrylic.jpg">Add to Cart</button></th>               </tr>
+               <tr>
+                 <th>ACRYLIC HEATCURE PV6 1.1LB</th>
+                 <th>PV6N1</th>
+                 <th>$ 42.16</th>
+                 <th>$ 33.75</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="PV6N1" data-name="ACRYLIC HEATCURE PV6" data-summary="41.60" data-price="52" data-quantity="1" data-image="img_mdc/acrylic.jpg">Add to Cart</button></th>
+               </tr>
+
+             </table>
+           </div>
+
+           <!-- Modal footer -->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+           </div>
+
+         </div>
+       </div>
+     </div>
+
+	  <div class="mf-column cacrylic">
+  		<div class="mf-content">
+  		  <img src="img_mdc/shades.png" style="width:100%">
+  		  <h4>Acrylic Tooth Shade </h4>
+        <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-ashades">Details</button></p>
+  		  <p>NIC TONE ACRYLIC Tooht Shades Jar 7oz</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal ashades-->
+     <div class="modal" id="myModal-ashades">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+
+           <!-- Modal Header -->
+           <div class="modal-header">
+             <h4 class="modal-title">NIC TONE ACRYLIC Tooht Shades</h4>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+
+           <!-- Modal body -->
+           <div class="modal-body">
+             <table>
+               <tr>
+                 <th>Product</th>
+                 <th>Code</th>
+                 <th>Price</th>
+                 <th>Since 3 Uni</th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 59</th>
+                 <th>59R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="59R7OZ" data-name="COLCURE SHADE 59" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 61</th>
+                 <th>61R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="61R7OZ" data-name="COLCURE SHADE 61" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 62</th>
+                 <th>62R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="62R7OZ" data-name="COLCURE SHADE 62" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 65</th>
+                 <th>65R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="65R7OZ" data-name="COLCURE SHADE 65" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 66</th>
+                 <th>66R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="66R7OZ" data-name="COLCURE SHADE 66" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 67</th>
+                 <th>67R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="67R7OZ" data-name="COLCURE SHADE 67" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 69</th>
+                 <th>69R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="69R7OZ" data-name="COLCURE SHADE 69" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+               <tr>
+                 <th>COLDCURE SHADE 81</th>
+                 <th>81R7OZ</th>
+                 <th>$ 28.06</th>
+                 <th>$ 22.45</th>
+                 <th><button class="btn btn-danger my-cart-btn" data-id="81R7OZ" data-name="COLCURE SHADE 81" data-summary="22.45" data-price="28.06" data-quantity="1" data-image="img_mdc/shades.png">Add to Cart</button></th>
+               </tr>
+
+             </table>
+           </div>
+
+           <!-- Modal footer -->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+           </div>
+
+         </div>
+       </div>
+     </div>
+
+	  <div class="mf-column cmonomers">
+  		<div class="mf-content">
+  		    <img src="img_mdc/monomer.jpg" style="width:100%">
+  		    <h4>Monomer</h4>
+          <p align="center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-monomer">Details</button></p>
+          <p>Monomer Nic Tone Bottle 32 oz</p>
+    	</div>
+	  </div>
+
+     <!-- The Modal ashades-->
+      <div class="modal" id="myModal-monomer">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Monomer Bottle 32 oz</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Code</th>
+                  <th>Price</th>
+                  <th>Since 3 Uni</th>
+                </tr>
+                <tr>
+                  <th>MONOMER HEAT CURE</th>
+                  <th>15LN106</th>
+                  <th>$ 28.06</th>
+                  <th>$ 22.45</th>
+                  <th><button class="btn btn-danger my-cart-btn" data-id="15LN106" data-name="MONOMER HEAT CURE" data-summary="32.50" data-price="40.18" data-quantity="1" data-image="img_mdc/monomer.jpg">Add to Cart</button></th>
+                </tr>
+                <tr>
+                  <th>MONOMER COLD CURE</th>
+                  <th>15LR106</th>
+                  <th>$ 28.06</th>
+                  <th>$ 22.45</th>
+                  <th><button class="btn btn-danger my-cart-btn" data-id="15LR106" data-name="MONOMER COLD CURE" data-summary="32.50" data-price="40.18" data-quantity="1" data-image="img_mdc/monomer.jpg">Add to Cart</button></th>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mf-column cplaster">
+    		<div class="mf-content">
+    		  <img src="img_mdc/plasteryel.jpg" style="width:100%">
+    		  <h4>Plaster Yellow</h4><strong>$ 22.00</strong>
+          <button class="btn btn-danger my-cart-btn" data-id="26Y02" data-name="PLASTER MAGNUM YELLOW BOX" data-summary="" data-price="22.00" data-quantity="1" data-image="img_mdc/plasteryel.jpg">Add to Cart</button>
+    		  <p>PLASTER MAGNUM YELLOW Type III Box 22 Lb</p>
+        </div>
+  	  </div>
+
+  	  <div class="mf-column cplaster">
+    		<div class="mf-content">
+    		  <img src="img_mdc/plasterblu.jpg" style="width:100%">
+    		  <h4>Plaster Blue</h4><strong>$ 22.00</strong>
+          <button class="btn btn-danger my-cart-btn" data-id="22B02" data-name="PLASTER MAGNUM BLUE BOX" data-summary="" data-price="22.00" data-quantity="1" data-image="img_mdc/plasterblu.jpg">Add to Cart</button>
+    		  <p>PLASTER MAGNUM Blue Type III Box 22 Lb</p>
+    		</div>
+  	  </div>
+
+  	  <div class="mf-column cplaster">
+    		<div class="mf-content">
+    		  <img src="img_mdc/plasterwhi.jpg" style="width:100%">
+    		  <h4>Plaster White</h4><strong>$ 16.00</strong>
+          <button class="btn btn-danger my-cart-btn" data-id="20PW02" data-name="PLASTER PARIS BOX" data-summary="" data-price="16.00" data-quantity="1" data-image="img_mdc/plasterwhi.jpg">Add to Cart</button>
+    		  <p>PLASTER PARIS CREAMY Type II Box 22 Lb</p>
+    		</div>
+  	  </div>
+
+
+	</div>
+
+<!-- END Mdc -->
+</div>
+
+<div class="put-include-footer"></div>
+
+<script>
+  $(".put-include-footer").load("footer.html");
+</script>
+
+</body>
+</html>

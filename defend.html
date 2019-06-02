@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FESA</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/jquery.mycart.js"></script>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mfoxcss.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+
+<div class="put-include-header"></div>
+
+<script>
+    $(".put-include-header").load("header.html");
+</script>
+
+<!-- Defend  -->
+<div class="main">
+
+	<p style="font-size:4vw">Defend Products Catalog</p>
+
+	<p style="font-size:2vw">Categories<p>
+
+	<div id="mymfcategory">
+	  <button class="mf-btncat active" onclick="filterSelection('all')"> Show all</button>
+	  <button class="mf-btncat" onclick="filterSelection('cmask')"> Mask</button>
+	  <button class="mf-btncat" onclick="filterSelection('cglove')"> Glove</button>
+	  <button class="mf-btncat" onclick="filterSelection('cdesinfectantion')"> Desinfectation</button>
+	  <button class="mf-btncat" onclick="filterSelection('cimpression')"> Impression</button>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="mf-row">
+
+	  <div class="mf-column cmask">
+      <div class="mf-content">
+  		  <img src="img_defend/MK-1046.jpg" style="width:100%">
+  		  <h4>MK-1046 </h4><strong>$10.58</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="MK-1046" data-name="Mask Dual Earloop Diffuser Anti-Fog Blue Box 50 pcs" data-summary="" data-price="10.58" data-quantity="1" data-image="img_defend/MK-1046.jpg">Add to Cart</button>
+        <p>Mask Dual Fit Earloop Diffuser Anti-Fog Blue Box 50 pcs</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cmask">
+  		<div class="mf-content">
+    		<img src="img_defend/MK-1056.jpg" style="width:100%">
+    	  <h4>MK-1056 </h4><strong>$10.58</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="MK-1056" data-name="Mask Dual Earloop Diffuser Anti-Fog Pink Box 50 pcs" data-summary="" data-price="10.58" data-quantity="1" data-image="img_defend/MK-1056.jpg">Add to Cart</button>
+    	  <p>Mask Dual Fit Earloop Diffuser Anti-Fog Pink Box 50 pcs</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cmask">
+  		<div class="mf-content">
+    		<img src="img_defend/MK-1106.jpg" style="width:100%">
+    	  <h4>MK-1106</h4><strong>$6.33</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="MK-1106" data-name="Mask Molded Earloop Blue Cone Box 50 pcs" data-summary="" data-price="6.33" data-quantity="1" data-image="img_defend/MK-1106.jpg">Add to Cart</button>
+        <p>Mask Molded Earloop "Premium" Blue Cone Box 50 pcs</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cglove">
+  		<div class="mf-content">
+    	  <img src="img_defend/LG-21XX.jpg" style="width:100%">
+    	  <h4>LG-21NN </h4><strong>$7.27</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-lg-21xx">Details</button>
+    	  <p>Gloves Latex Powder Free Micro Textured White Box 100 pcs</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal lg-21xx-->
+    <div class="modal" id="myModal-lg-21xx">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Gloves Latex Powder Free</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>LG-2102</th>
+                <th>X-Small</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="LG-2102" data-name="Gloves Latex Powder Free Size X-Small" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/LG-21XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>LG-2103</th>
+                <th>Small</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="LG-2103" data-name="Gloves Latex Powder Free Size Small" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/LG-21XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>LG-2104</th>
+                <th>Medium</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="LG-2104" data-name="Gloves Latex Powder Free Size Medium" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/LG-21XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>LG-2105</th>
+                <th>Large</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="LG-2105" data-name="Gloves Latex Powder Free Size Large" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/LG-21XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>LG-2106</th>
+                <th>x-Large</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="LG-2106" data-name="Gloves Latex Powder Free Size X-Large" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/LG-21XX.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+	  <div class="mf-column cglove">
+  		<div class="mf-content">
+  		<img src="img_defend/NG-20XX.jpg" style="width:100%">
+  		  <h4>NG-20NN </h4><strong>$ 7.27</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-ng-20xx">Details</button>
+  		  <p>Gloves Nitrile Powder Free Blue Box 100 pcs./ tactile strength </p>
+  		</div>
+	  </div>
+
+    <!-- The Modal ng-20xx-->
+    <div class="modal" id="myModal-ng-20xx">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Gloves Nitrile Powder Free</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>NG-2002</th>
+                <th>X-Small</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="NG-2002" data-name="Gloves Nitrile Powder Free Size X-Small" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/NG-20XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>NG-2003</th>
+                <th>Small</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="NG-2003" data-name="Gloves Nitrile Powder Free Size Small" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/NG-20XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>NG-2004</th>
+                <th>Medium</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="NG-2004" data-name="Gloves Nitrile Powder Free Size Medium" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/NG-20XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>NG-2005</th>
+                <th>Large</th>
+                <th>$ 7.27</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="NG-2005" data-name="Gloves Nitrile Powder Free Size Large" data-summary="" data-price="7.27" data-quantity="1" data-image="img_defend/NG-20XX.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+	  <div class="mf-column cdesinfectantion">
+  		<div class="mf-content">
+  		  <img src="img_defend/SO-9100.jpg" style="width:100%">
+  		  <h4>SO-9100 </h4><strong>$21.93</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="SO-9100" data-name="SRG Evacuation system cleaner Galon" data-summary="" data-price="21.93" data-quantity="1" data-image="img_defend/SO-9100.jpg">Add to Cart</button>
+  		  <p>SRG Evacuation system cleaner Galon. pump not included</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cdesinfectantion">
+  		<div class="mf-content">
+  		<img src="img_defend/SO-9401.jpg" style="width:100%">
+  		  <h4>SO-9401 </h4><strong>$21.93</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="SO-9401" data-name="General Purpose Cleaner Galon" data-summary="" data-price="21.93" data-quantity="1" data-image="img_defend/SO-9401.jpg">Add to Cart</button>
+  		  <p>General Purpose Cleaner Galon. 10:1 concentrated formula</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/VP-90XX.jpg" style="width:100%">
+  		  <h4>VP-90XX </h4><strong>$ 22.50</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-vp-90xx">Details</button>
+  		  <p>VPS Impression Material 4 CARTRIDGES PER BOX. HP High Performance </p>
+  		</div>
+	  </div>
+
+    <!-- The Modal VP-90XX-->
+    <div class="modal" id="myModal-vp-90xx">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">VPS Impression Material</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>VP-9003</th>
+                <th>Light regular</th>
+                <th>$ 22.50</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-9003" data-name="VPS Impression Material Light regular" data-summary="" data-price="22.50" data-quantity="1" data-image="img_defend/VP-90XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr><th>VP-9004</th>
+                <th>Medium Body</th>
+                <th>$ 22.50</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-9004" data-name="VPS Impression Material Medium Body" data-summary="" data-price="22.50" data-quantity="1" data-image="img_defend/VP-90XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>VP-9005</th>
+                <th>Monophase</th>
+                <th>$ 22.50</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-9005" data-name="VPS Impression Material Monophase" data-summary="" data-price="22.50" data-quantity="1" data-image="img_defend/VP-90XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>VP-9007</th>
+                <th>Heavy Body</th>
+                <th>$ 22.50</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-9007" data-name="VPS Impression Material Heavy Body" data-summary="" data-price="22.50" data-quantity="1" data-image="img_defend/VP-90XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>VP-9008</th>
+                <th>Light fast set</th>
+                <th>$ 22.50</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-9008" data-name="VPS Impression Material Light fast set" data-summary="" data-price="22.50" data-quantity="1" data-image="img_defend/VP-90XX.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/CB-900X.jpg" style="width:100%">
+  		  <h4>CB-900X</h4><strong>$ 77.85</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-cb-900x">Details</button>
+  		  <p>Temporary Crown and Bridge Material. Cartridge 76 gm 10:1 y 10 T-Mixer Tips A1 / A2 / A3</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal CB-900X-->
+    <div class="modal" id="myModal-cb-900x">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Temporary Crown and Bridge Material</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>CB-9000</th>
+                <th>A1</th>
+                <th>$ 77.85</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="CB-9000" data-name="Temporary Crown and Bridge Material A1" data-summary="" data-price="77.85" data-quantity="1" data-image="img_defend/CB-900X.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>CB-9001</th>
+                <th>A2</th>
+                <th>$ 77.85</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="CB-9001" data-name="Temporary Crown and Bridge Material A2" data-summary="" data-price="77.85" data-quantity="1" data-image="img_defend/CB-900X.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>CB-9005</th>
+                <th>A3</th>
+                <th>$ 77.85</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="CB-9005" data-name="Temporary Crown and Bridge Material A3" data-summary="" data-price="77.85" data-quantity="1" data-image="img_defend/CB-900X.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/VP-8202.jpg" style="width:100%">
+  		  <h4>VP-8202</h4><strong>$66.56</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="VP-8202" data-name="Dispensing Gun. For 1:1/2:1 HP Cartridge- 50ml" data-summary="" data-price="66.56" data-quantity="1" data-image="img_defend/VP-8202.jpg">Add to Cart</button>
+        <p>Dispensing Gun. For 1:1/2:1 HP Cartridge- 50ml</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/BR-900X.jpg" style="width:100%">
+  		  <h4>BR-900X </h4><strong>$ 26.67</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-br-900x">Details</button>
+  		  <p>Bite Registration Material 2 CARTRIDGES 50ML EACH FAST / REGULAR</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal CB-900X-->
+    <div class="modal" id="myModal-br-900x">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Bite Registration Material</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>BR-9001</th>
+                <th>Regular</th>
+                <th>$ 26.67</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="BR-9001" data-name="Bite Registration Material Regular" data-summary="" data-price="26.67" data-quantity="1" data-image="img_defend/BR-900X.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>BR-9002</th>
+                <th>Fast</th>
+                <th>$ 26.67</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="BR-9002" data-name="Bite Registration Material Fast" data-summary="" data-price="26.67" data-quantity="1" data-image="img_defend/BR-900X.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/VP-8204.jpg" style="width:100%">
+  		  <h4>VP-8204</h4><strong>$ 75.00</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="VP-8204" data-name="Dispensing Gun. For For 4:1/10:1 Cartridge 50ml" data-summary="" data-price="75.00" data-quantity="1" data-image="img_defend/VP-8204.jpg">Add to Cart</button>
+  		  <p>Dispensing Gun. For 4:1/10:1 Cartridge 50ml</p>
+  		</div>
+	  </div>
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/IT-70XX.jpg" style="width:100%">
+  		  <h4>IT-70XX</h4><strong>$</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-it-70xx">Details</button>
+  		  <p>Defend Impression Trays. L/M/S/Qua/Ant Bag 12 pcs</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal IT-70xx-->
+    <div class="modal" id="myModal-it-70xx">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Defend Impression Trays</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>IT-7001</th>
+                <th>#1 Upper-Large</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7001" data-name="Defend Impression Trays - #1 Upper-Large" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7002</th>
+                <th>#2 Low-Large</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7002" data-name="Defend Impression Trays - #2 Low-Large" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7003</th>
+                <th>#3 Medium-Upper</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7003" data-name="Defend Impression Trays - #3 Medium-Upper" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7004</th>
+                <th>#4 Medium-Lowerr</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7004" data-name="Defend Impression Trays - #4 Medium-Lower" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7005</th>
+                <th>#5 Small-Upper</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7005" data-name="Defend Impression Trays - #5 Small-Upper" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7006</th>
+                <th>#6 Small-Lower</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7006" data-name="Defend Impression Trays - #6 Small-Lower" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7007</th>
+                <th>#7 Upper Right-Low Left</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7007" data-name="Defend Impression Trays - #7 Upper Right-Low Left" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7008</th>
+                <th>#8 Upper Left-Low Right</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7008" data-name="Defend Impression Trays - #8 Upper Left-Low Right" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7009</th>
+                <th>#9 Anterior</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7009" data-name="Defend Impression Trays - #9 Anterior" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>IT-7010</th>
+                <th>#10 Upper Anterior</th>
+                <th>$ 5.00</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="IT-7010" data-name="Defend Impression Trays - #10 Upper Anterior" data-summary="" data-price="5.00" data-quantity="1" data-image="img_defend/IT-70XX.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+	  <div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/VP-8300.jpg" style="width:100%">
+  		  <h4>VP-8300</h4><strong>$ 12.32</strong>
+        <button class="btn btn-danger my-cart-btn" data-id="VP-8300" data-name="VPS Tray Adhesive Vinyl Defend 10ml" data-summary="" data-price="12.32" data-quantity="1" data-image="img_defend/VP-8300.jpg">Add to Cart</button>
+  		  <p>VPS Tray Adhesive Vinyl Defend 10ml</p>
+  		</div>
+	  </div>
+
+  	<div class="mf-column cimpression">
+  		<div class="mf-content">
+  		  <img src="img_defend/VP-800X.jpg" style="width:100%">
+  		  <h4>VP-800X</h4><strong>$ 49.58</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-vp-800x">Details</button>
+  		  <p>Putty Material. 2 jars 300 ml each of base y catalyst.</p>
+  		</div>
+	  </div>
+
+    <!-- The Modal vp-800x-->
+    <div class="modal" id="myModal-vp-800x">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Putty Material</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <th>VP-8006</th>
+                <th>Regular</th>
+                <th>$ 49.58</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-8006" data-name="Putty Material - Regular" data-summary="" data-price="49.58" data-quantity="1" data-image="img_defend/VP-800X.jpg">Add to Cart</button></th>
+              </tr>
+              <tr>
+                <th>VP-8008</th>
+                <th>Fast</th>
+                <th>$ 49.58</th>
+                <th><button class="btn btn-danger my-cart-btn" data-id="VP-8008" data-name="Putty Material - Fast" data-summary="" data-price="49.58" data-quantity="1" data-image="img_defend/VP-800X.jpg">Add to Cart</button></th>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+	  <!-- END GRID -->
+	</div>
+
+<!-- END Defend -->
+</div>
+
+<div class="put-include-footer"></div>
+
+<script>
+  $(".put-include-footer").load("footer.html");
+</script>
+
+
+</body>
+</html>
