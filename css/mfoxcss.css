@@ -1,1 +1,568 @@
+body, html {
+  height: 100%;
+  margin:0;
+  margin-top: 0px;
+  font-family: Verdana, sans-serif;
+  /* font: 400 15px/1.8 "Lato", sans-serif; influye en Menu*/
+  color: #777;
+
+}
+
+.logo {
+  padding: 4px 8px;
+  color:green;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* Menu horizontal */
+.mf-navbar {
+    overflow: auto; /* zzz hidden; */
+    background-color: #333;
+    /* / zzz margin-left: 0px; */
+    /* / zzz padding: 2px 16px; */
+    width: 100%;
+}
+
+.mf-navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    /*  zzz text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mf-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.mf-dropdown .mf-dropopt {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.mf-navbar a:hover, .mf-dropdown:hover .mf-dropopt {
+    background-color: black;
+}
+
+.mf-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: DarkGray ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mf-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mf-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.mf-dropdown:hover .mf-dropdown-content {
+    display: block;
+}
+
+
+@media screen and (max-width: 500px) {
+  .mf-navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* Menu push - off canvas menu*/
+
+.mf-sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mf-sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mf-sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mf-sidenav .mf-closenav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .mf-sidenav {padding-top: 15px;}
+  .mf-sidenav a {font-size: 18px;}
+}
+
+
+/* Icons */
+
+.mf-icon-bar {
+    /* width: 50%*/
+    background-color: #333;
+    overflow: auto;
+}
+
+.mf-icon-bar a {
+    float: left;
+    width: 5%;
+    text-align: center;
+    padding: auto;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 16px;
+}
+
+.mf-icon-bar a:hover {
+    background-color: black;
+}
+
+.active-bar {
+    background-color: #4CAF50 !important;
+}
+
+
+/* background Parallax img 1,2,3,4 */
+
+.bg {
+    /* The image used */
+    background-image: url("imagenparalax5.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .bgbitimg-2, .bgbitimg-3, .bgbitimg-4  {
+
+  position: relative;
+  opacity: 0.99;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgbitimg-1 {
+  background-repeat: no-repeat;
+  background-image: url("imagenparalax1.jpg");
+  min-height: 100%;
+  background-size: cover;
+}
+.bgbitimg-2 {
+  background-image: url("imagenparalax2a.jpg");
+  min-height: 600px;
+}
+
+.bgbitimg-3 {
+  background-image: url("imagenparalax3.jpg");
+  opacity: 0.75;
+  min-height: 600px;
+}
+
+.bgbitimg-4 {
+  background-image: url("imagenparalax4.jpg");
+  opacity: 0.75;
+  min-height: 600px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption2 {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgbitimg-1, .bgbitimg-2, .bgbitimg-3 {
+        background-attachment: scroll;
+    }
+}
+/* Imagen Text Block*/
+.text-block {
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Imagen 3 slides Show*/
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container ------------*/
+.slideshow-container {
+  max-width: 700px;
+/*   position: relative; */
+/*   left: 140px;  */
+/*   top: 120px; */
+/*   margin: auto; */
+
+    position: absolute;
+    bottom: 145px;
+    right: 180px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slide_text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.slide_text {font-size: 11px}
+}
+
+/* Portafolios Gallery -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;  /*ancho de screen*/
+  margin: auto;
+  padding-top: 90px;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.mf-row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.mf-row,
+.mf-row > .mf-column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.mf-column {
+  float: left;
+  width: 25%;
+  height: 610px;
+  display: none; /* Hide all elements by default */
+}
+
+
+
+/* Clear floats after rows */
+.mf-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.mf-content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.mf-show {
+  display: block;
+}
+
+/* Style the buttons */
+.mf-btncat {
+  border: none;
+  outline: none;
+  padding: 12px 18px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.mf-btncat:hover {
+  background-color: #ddd;
+}
+
+.mf-btncat.active {
+  background-color: #666;
+  color: white;
+}
+/* End Portafolios Gallery */
+
+/* tablitas para modal*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+/* tablitas para modal*/
+
+/* shopping cart */
+.badge-notify{
+  background: red;
+  top: 0px;
+  right: 0px;
+}
+
+.my-cart-icon-affix {
+  position: fixed;
+  z-index: 999;
+}
+
+/* End shopping cart */
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mf-text-tachado {
+  text-decoration: line-through;
+}
+/* code pen modal right side ****************/
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+	.modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+
+/*Left*/
+	.modal.left.fade .modal-dialog{
+		left: -320px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		        transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+
+	.modal.left.fade.in .modal-dialog{
+		left: 0;
+	}
+
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+
+/* ----- MODAL STYLE ----- */
+	.modal-content {
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color: #FAFAFA;
+	}
+
+/* ----- v CAN BE DELETED v ----- */
+
+.demo {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+
+.btn-demo {
+	margin: 15px;
+	padding: 10px 15px;
+	border-radius: 0;
+	font-size: 16px;
+	background-color: #FFFFFF;
+}
+
+.btn-demo:focus {
+	outline: 0;
+}
+
+.demo-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+	background-color: #212121;
+	text-align: center;
+}
+
+.demo-footer > a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+}
+
+.mf-div-noshow {
+    display: none;
+}
+
+.mf-class-pdftext{
+  font-size": "8px";
+}
 
